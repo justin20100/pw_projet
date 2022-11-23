@@ -1,0 +1,46 @@
+footer a, footer {
+    color: $white;
+}
+footer a:hover {
+    border-bottom: solid $blue 2px;
+}
+/* ----- newsletter ----- */
+.footer__subscribe-newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: calc-em(150, 16);
+}
+.subscribe-newsletter__title {
+    color: $white;
+    text-align: center;
+    margin-bottom: calc-em(60, 36);
+}
+.subscribe-newsletter__button {
+    font-size: 0.9em;
+    border: none;
+    margin-left: calc-em(30, 16);
+}
+/* ----- links ----- */
+.footer__links-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+.links-container__subtitle {
+    color: $white;
+    font-size: calc-em(22, 16);
+    margin-bottom: calc-em(20, 22);
+}
+.links-container__item {
+    margin-bottom: calc-em(15, 16);
+}
+.links-container__subitem {
+    margin: 0 0 calc-em(15, 16) calc-em(15, 16);
+}
+.links-container__link {
+    color: $white;
+}
+.links-container__item p {
+    margin-bottom: calc-em(5, 16);
+}
