@@ -15,8 +15,8 @@
     <h1 class="header__title">Qui sont nos enseignants ?</h1>
     <p class="header__excerpt">Nos enseignants sont des personnes de confiance et très bien qualifiées. Il s’agit de professionnels du web, ils pratiquent tous très souvent et sont toujours a jour au niveau des nouvelles tendances.</p>
 </header>
-<main class="main__enseignants enseignants">
-    <section class="enseignants__cards">
+<main class="main">
+    <section class="enseignants">
         <h2 class="enseignants__title hidden">Les enseigants</h2>
         <div class="enseignants__card">
             <img src="{{url('/images/enseignants/enseignant.jpg')}}" alt="" class="enseignants__img">
@@ -53,6 +53,9 @@
             <p class="enseignants__name">Dominique Vilain</p>
             <p class="enseignants__short-desc">Enseigne une introduction au design web, php, laravel,… </p>
         </div>
+    </section>
+    <section class="main__cta-projects projects">
+        <x-commons.projectsCards></x-commons.projectsCards>
     </section>
 </main>
 </body>

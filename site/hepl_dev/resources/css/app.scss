@@ -4,11 +4,18 @@
 @import "colors";
 @import "keyframes";
 @import "forms";
+
+/* ----- components ------ */
 @import "navigation";
 @import "footer";
+@import "projectsCards";
+
+/* ----- pages ------ */
 @import "index";
 @import "section";
 @import "enseignants";
+
+
 /* --- Global css --- */
 .hidden {
     position: absolute;
@@ -27,6 +34,13 @@ footer {
 }
 header, main {
     margin: 0 calc-em(100, 16) calc-em(100, 16);
+}
+.header__title{
+    margin-bottom: calc-em(20,40);
+}
+.header__excerpt{
+    color: $lightGrey;
+    line-height: 1.33em;
 }
 /* --- Fonts --- */
 h1, h2, h3, h4 {

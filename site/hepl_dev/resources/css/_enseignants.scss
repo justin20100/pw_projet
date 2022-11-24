@@ -1,15 +1,9 @@
-.header__title{
-    margin-bottom: calc-em(20,40);
-}
-.header__excerpt{
-    color: $lightGrey;
-    line-height: 1.33em;
-}
-.enseignants__cards{
+.enseignants{
     padding: 0 calc-em(70,16);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: calc-em(100,16);
+    margin-bottom: calc-em(140,16);
 }
 .enseignants__card{
     display: flex;
