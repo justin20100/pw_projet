@@ -66,13 +66,13 @@
     </svg>
     <ul class="navigation__list">
         <li class="navigation__item"><a class="navigation__link" href="/">Accueil</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="/section">La section</a>
-            {{--            <ul class="navigation__list">--}}
-            {{--                <li class="navigation__item"><a class="navigation__link" href="/section/valeurs">Nos valeurs</a></li>--}}
-            {{--                <li class="navigation__item"><a class="navigation__link" href="/section/enseignants">Enseignants</a></li>--}}
-            {{--                <li class="navigation__item"><a class="navigation__link" href="/section/alumnis">Alumnis</a></li>--}}
-            {{--                <li class="navigation__item"><a class="navigation__link" href="/section/projets">Projets étudiants</a></li>--}}
-            {{--            </ul>--}}
+        <li class="navigation__item navigation__section-item"><a class="navigation__link" href="/section">La section</a>
+                        <ul class="navigation__sublist">
+                            <li class="navigation__subitem"><a class="navigation__link" href="/section/valeurs">Nos valeurs</a></li>
+                            <li class="navigation__subitem"><a class="navigation__link" href="/section/enseignants">Enseignants</a></li>
+                            <li class="navigation__subitem"><a class="navigation__link" href="/section/alumnis">Alumnis</a></li>
+                            <li class="navigation__subitem"><a class="navigation__link" href="/section/projets">Projets étudiants</a></li>
+                        </ul>
         </li>
         <li class="navigation__item"><a class="navigation__link" href="/emploie">Emploie</a></li>
         <li class="navigation__item"><a class="navigation__link" href="/news">News</a></li>

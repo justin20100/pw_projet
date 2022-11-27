@@ -44,3 +44,35 @@
         animation: button 0.3s ease-out;
     }
 }
+
+
+.navigation__section-item:hover{
+    position: relative;
+    z-index: +1;
+    .navigation__sublist{
+        display: flex;
+    }
+
+}
+.navigation__sublist{
+    display: none;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -2;
+    flex-direction: column;
+    border-radius: calc-em(20,16);
+    border: solid $blue 2px;
+    box-shadow: 3px 2px 5px 3px rgba(0, 0, 0, 0.16);
+    padding: calc-em(35,16) calc-em(30,16);
+    background-color: $white;
+    line-height: 1.4;
+}
+.navigation__subitem{
+    padding-top: calc-em(25,16);
+}
+.navigation__subitem>.navigation__link{
+    margin: 0;
+}
+
+
