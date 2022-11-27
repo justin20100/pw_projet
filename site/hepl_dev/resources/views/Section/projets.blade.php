@@ -9,7 +9,7 @@
     @vite(['resources/css/app.scss', 'resources/js/app.js'])
 </head>
 <body>
-<header>
+<header class="projets__header">
     <x-commons.navigation></x-commons.navigation>
     <p class="header__arian-thread">/La section web/Projets d'etudiant</p>
     <h1 class="header__title">Les projets des etudiants</h1>

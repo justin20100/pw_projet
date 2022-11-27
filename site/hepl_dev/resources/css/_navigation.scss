@@ -51,22 +51,23 @@
     z-index: +1;
     .navigation__sublist{
         display: flex;
+        animation: forwards sublist ease-in-out 0.3s;
     }
 
 }
 .navigation__sublist{
+    z-index: -2;
+    opacity: 0%;
+    line-height: 1.4;
+    padding: calc-em(35,16) calc-em(30,16);
+    background-color: $white;
     display: none;
+    flex-direction: column;
     position: absolute;
     top: -20px;
     left: 0;
-    z-index: -2;
-    flex-direction: column;
     border-radius: calc-em(20,16);
-    border: solid $blue 2px;
     box-shadow: 3px 2px 5px 3px rgba(0, 0, 0, 0.16);
-    padding: calc-em(35,16) calc-em(30,16);
-    background-color: $white;
-    line-height: 1.4;
 }
 .navigation__subitem{
     padding-top: calc-em(25,16);
