@@ -76,7 +76,7 @@
         </li>
         <li class="navigation__item"><a class="navigation__link" href="/emploie">Emploie</a></li>
         <li class="navigation__item"><a class="navigation__link" href="/news">News</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="/blog">Blog</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="/forum">Forum</a></li>
         <li class="navigation__item"><a class="navigation__link" href="/contact">Contact</a></li>
         {{--        <li class="navigation__item"><input class="navigation__search" type="text" placeholder="Ma recherche"></li>--}}
         <li class="navigation__item"><a class="navigation__fill-button" href="/register">S'inscrire</a></li>

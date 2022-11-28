@@ -46,9 +46,9 @@
     }
 }
 .navigation__section-item:after{
-    content: "❯";
+    content: url("../../public/images/projets/arrow.svg");
     display: inline-block;
-    transform: rotate(90deg) translatey(-3px);
+    transform: translateX(3px)translatey(2px);
 }
 .navigation__section-item:hover{
     &:after{

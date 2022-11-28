@@ -1,0 +1,66 @@
+/* ----- Global forum ----- */
+.subjects__title{
+    text-align: center;
+}
+.main__subjects{
+    margin:  0 calc-em(100,16);
+}
+.forum__header{
+    margin-bottom: calc-em(100,16);
+}
+.subjects__title{
+    margin-bottom: calc-em(100,40);
+}
+
+/* ----- subjects -----  */
+.subjects__container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 calc-em(50,16);
+}
+.subjects__article{
+    padding: calc-em(20,16) 0;
+    border-bottom: solid 1px $lightGrey;
+    margin-bottom: calc-em(20,16);
+}
+.subject__title{
+    font-size: calc-em(22,16);
+    margin-bottom: calc-em(20,22);
+}
+.subject__tags{
+    display: flex;
+    align-items: center;
+    margin-bottom: calc-em(10,16);
+}
+.subject__tag{
+    font-family: latoRegular,sans-serif;
+    font-size: calc-em(12,16);
+    padding: calc-em(7,14);
+    background-color: $lightGrey;
+    color: $white;
+    border-radius: calc-em(10,16);
+    margin-right: calc-em(10,16);
+    &:hover{
+        background-color: $blue;
+        cursor: pointer;
+    }
+}
+.subject__excerpt{
+    margin-bottom: calc-em(20,16);
+}
+.subject__auth{
+    display: flex;
+    align-items: center;
+}
+.subject__auth-name>a{
+    color:$black;
+    &:hover{
+        color: $blue;
+    }
+}
+.subject__auth-img{
+    max-width: 30px;
+    border-radius: 100%;
+    margin-right: calc-em(10,16);
+}
+

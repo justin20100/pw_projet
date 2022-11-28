@@ -2,16 +2,16 @@ input{
     font-family: latoRegular,sans-serif;
 }
 
-/* ----- projects filter form ----- */
+/* ----- filter form ----- */
 
-.projects__form{
+.filter__form{
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     margin-bottom: calc-em(40,16);
 }
-.projects__search-input{
+.filter__search-input{
     padding: calc-em(15,16);
     border-radius: calc-em(10,16);
     border: none;
@@ -20,17 +20,28 @@ input{
         outline-color: $blue;
     }
 }
-.projects__sort-select{
-    padding: calc-em(15,16);
+.filter__sort-select{
+    padding: calc-em(15,16) calc-em(45,16) calc-em(15,16) calc-em(15,16);
     border-radius: calc-em(10,16);
     border: none;
     background-color: $blue;
     color: $white;
+    appearance: none;
     &:focus{
         outline-color: $blue;
     }
+    &:hover{
+        cursor: pointer;
+    }
 }
-
+.filter__sort-select__svg{
+    position: relative;
+    top: 3px;
+    right: 35px;
+}
+.filter__sort-option{
+    display: flex;
+}
 
 /* ----- newsletter form ----- */
 .form__group {

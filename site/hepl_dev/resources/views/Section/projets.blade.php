@@ -18,21 +18,7 @@
 <main class="main">
     <section class="main__cta-projects projects">
         <h2 class="projects__title hidden">Des projets D’étudiants</h2>
-        <form action="" class="projects__form">
-            <div>
-                <label for="search" class="projects__search-label"></label>
-                <input type="search" name="search" class="projects__search-input" placeholder="Recherche">
-            </div>
-            <div>
-                <label for="sort" class="projects__sort-label"> Trier par &nbsp;&nbsp;
-                    <select name="sort" class="projects__sort-select">
-                        <option class="projects__option">Le plus recent</option>
-                        <option class="projects__option">Le plus ancien</option>
-                        <option class="projects__option">Aléatoirement</option>
-                    </select>
-                </label>
-            </div>
-        </form>
+        <x-commons.filterForm></x-commons.filterForm>
         <x-commons.projectsCards></x-commons.projectsCards>
         <a href="/section/projets" class="projects__link button">Découvrir plus</a>
     </section>

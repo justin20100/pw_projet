@@ -15,6 +15,7 @@
 @import "section";
 @import "enseignants";
 @import "projets";
+@import "forum";
 
 
 /* --- Global css --- */
@@ -60,6 +61,9 @@ header, main {
     color: $lightGrey;
     line-height: 1.33em;
     margin: 0 calc-em(100,16);
+}
+.header__link{
+    margin: calc-em(30,16) calc-em(100,16) calc-em(20,16);
 }
 /* --- Fonts --- */
 h1, h2, h3, h4 {
