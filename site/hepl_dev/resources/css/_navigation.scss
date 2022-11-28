@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     margin: calc-em(30, 16) 0 calc-em(70, 16);
+    padding: 0 calc-em(100, 16);
 }
 .navigation > .navigation__list {
     display: flex;
@@ -44,9 +45,15 @@
         animation: button 0.3s ease-out;
     }
 }
-
-
+.navigation__section-item:after{
+    content: "❯";
+    display: inline-block;
+    transform: rotate(90deg) translatey(-3px);
+}
 .navigation__section-item:hover{
+    &:after{
+        animation: navArrowRotation ease-in-out 0.3s forwards;
+    }
     position: relative;
     z-index: +1;
     .navigation__sublist{

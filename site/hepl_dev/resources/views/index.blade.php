@@ -115,7 +115,7 @@
     <section class="main__cta-projects projects">
         <h2 class="projects__title">Des projets D’étudiants</h2>
         <x-commons.projectsCards></x-commons.projectsCards>
-        <a href="/section/projets" class="projects__link button">Voir plus de projets</a>
+        <a href="/section/projets" class="projects__link button">Découvrir les projets</a>
     </section>
     <section class="main__cta-blog cta-blog">
         <h2 class="cta-blog__title">Une question ? Une remarque ?</h2>
@@ -125,6 +125,6 @@
         <a href="/blog" class="cta-blog__link button">Poser une question</a>
     </section>
 </main>
-</body>
 <x-commons.footer></x-commons.footer>
+</body>
 </html>

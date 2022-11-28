@@ -1,3 +1,38 @@
+input{
+    font-family: latoRegular,sans-serif;
+}
+
+/* ----- projects filter form ----- */
+
+.projects__form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: calc-em(40,16);
+}
+.projects__search-input{
+    padding: calc-em(15,16);
+    border-radius: calc-em(10,16);
+    border: none;
+    box-shadow: 3px 2px 5px 3px rgba(0, 0, 0, 0.16);
+    &:focus{
+        outline-color: $blue;
+    }
+}
+.projects__sort-select{
+    padding: calc-em(15,16);
+    border-radius: calc-em(10,16);
+    border: none;
+    background-color: $blue;
+    color: $white;
+    &:focus{
+        outline-color: $blue;
+    }
+}
+
+
+/* ----- newsletter form ----- */
 .form__group {
     position: relative;
     padding: 15px 0 0;

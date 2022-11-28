@@ -11,7 +11,7 @@
 <body>
 <header class="enseignants__header">
     <x-commons.navigation></x-commons.navigation>
-    <p class="header__arian-thread">/La section web/Enseignants</p>
+    <p class="header__arian-thread">/La section web/<strong>Enseignants</strong></p>
     <h1 class="header__title">Qui sont nos enseignants ?</h1>
     <p class="header__excerpt">Nos enseignants sont des personnes de confiance et très bien qualifiées. Il s’agit de professionnels du web, ils pratiquent tous très souvent et sont toujours a jour au niveau des nouvelles tendances.</p>
 </header>
@@ -55,7 +55,9 @@
         </div>
     </section>
     <section class="main__cta-projects projects">
+        <h2 class="projects__title">Des projets d'etudiants</h2>
         <x-commons.projectsCards></x-commons.projectsCards>
+        <a href="#" class="projects__link button">Découvrir les projets</a>
     </section>
 </main>
 </body>

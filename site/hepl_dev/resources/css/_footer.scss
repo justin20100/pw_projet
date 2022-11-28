@@ -14,7 +14,7 @@ footer a:hover {
 .subscribe-newsletter__title {
     color: $white;
     text-align: center;
-    margin-bottom: calc-em(60, 36);
+    margin: calc-em(100,36) 0 calc-em(60, 36);
 }
 .subscribe-newsletter__button {
     font-size: 0.9em;
@@ -25,7 +25,8 @@ footer a:hover {
 .footer__links-container {
     display: flex;
     justify-content: space-between;
-    max-width: 100%;
+    max-width: 1440px;
+    width: 80%;
 }
 .links-container__subtitle {
     color: $white;

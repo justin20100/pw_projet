@@ -11,7 +11,7 @@
 <body>
 <header class="section__header">
     <x-commons.navigation></x-commons.navigation>
-    <p class="header__arian-thread">/La section web</p>
+    <p class="header__arian-thread">/<strong>La section web</strong></p>
     <h1 class="header__title">Qu’est ce que la section web ?</h1>
 </header>
 <main class="main__section section">
@@ -25,7 +25,6 @@
                 </br>La section web est implantée au parc des Marêts à Seraing avec d’autre bacheliers en liens avec l’informatique.</p>
             <a href="https://hepl.be" target="_blank" class="section__link button">Visiter le site de la HEPL</a>
         </div>
-
     </section>
     <section class="section__section">
         <div class="section__left">
@@ -66,6 +65,6 @@
         </div>
     </section>
 </main>
-</body>
 <x-commons.footer></x-commons.footer>
+</body>
 </html>
