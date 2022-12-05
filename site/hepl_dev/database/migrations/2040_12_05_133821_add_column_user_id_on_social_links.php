@@ -13,15 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('companies', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('slug');
-            $table->string('description');
-            $table->string('profile_src');
-            $table->date('creation_date');
-            $table->timestamps();
-            $table->softDeletes();
+        Schema::table('social_links', static function (Blueprint $table) {
+            $table->foreignId('user_id')->nullable()->constrained('users')->onUpdate('cascade');
         });
     }
 
@@ -32,6 +25,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('companies');
+        //
     }
 };

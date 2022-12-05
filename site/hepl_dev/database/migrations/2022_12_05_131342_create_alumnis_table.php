@@ -15,13 +15,11 @@ return new class extends Migration
     {
         Schema::create('alumnis', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')
-                ->constrained('users');
             $table->string('first_name');
             $table->string('last_name');
             $table->string('description');
             $table->string('profile_src');
-            $table->date('graduation_date');
+            $table->timestamp('graduation_date');
             $table->timestamps();
             $table->softDeletes();
         });
