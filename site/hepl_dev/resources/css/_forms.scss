@@ -101,3 +101,35 @@ input{
         box-shadow: none;
     }
 }
+
+/* ----- login form ----- */
+.loginForm__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.loginForm__email, .loginForm__password{
+    width: 50%;
+    margin-bottom: calc-em(30,16);
+}
+.loginForm__label{
+    display: inline-block;
+    padding-bottom: calc-em(10,16);
+}
+.loginForm__input{
+    padding: calc-em(15,16);
+    border-radius: calc-em(10,16);
+    border: none;
+    box-shadow: 3px 2px 5px 3px rgba(0, 0, 0, 0.16);
+    width: 100%;
+    &:focus{
+        outline-color: $blue;
+    }
+}
+.LoginForm__button{
+    border: none;
+    margin-bottom: calc-em(10,16);
+}
+.LoginForm__link{
+    font-size: calc-em(14,16);
+}

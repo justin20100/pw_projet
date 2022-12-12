@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthenticatedSessionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,42 +14,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', function () {return view('index');});
 
-Route::get('/section', function () {
-    return view('section');
-});
+Route::get('/section', function () {return view('section');});
 
-Route::get('/section/valeurs', function () {
-    return view('section.valeurs');
-});
+Route::get('/section/valeurs', function () {return view('section.valeurs');});
 
-Route::get('/section/enseignants', function () {
-    return view('section.enseignants');
-});
+Route::get('/section/enseignants', function () {return view('section.enseignants');});
 
-Route::get('/section/alumnis', function () {
-    return view('section.alumnis');
-});
+Route::get('/section/alumnis', function () {return view('section.alumnis');});
 
-Route::get('/section/projets', function () {
-    return view('section.projets');
-});
+Route::get('/section/projets', function () {return view('section.projets');});
 
-Route::get('/emploie', function () {
-    return view('emploie');
-});
+Route::get('/emploie', function () {return view('emploie');});
 
-Route::get('/news', function () {
-    return view('news');
-});
+Route::get('/news', function () {return view('news');});
 
-Route::get('/forum', function () {
-    return view('forum');
-});
+Route::get('/forum', function () {return view('forum');});
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::get('/contact', function () {return view('contact');});
+
+// Auth
+Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('login')->middleware('guest');
+Route::post('/login', [AuthenticatedSessionController::class, 'store'])->middleware('guest');
+Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->middleware('auth');

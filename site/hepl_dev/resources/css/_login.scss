@@ -1,0 +1,12 @@
+.header__login{
+    margin-bottom: calc-em(100,16);
+}
+.main__loginForm{
+    margin:  0 calc-em(100,16) calc-em(100,16);
+}
+.loginForm__errorMessage{
+    font-size: calc-em(14,16);
+    font-family: latoRegular,sans-serif;
+    color: red;
+    margin-bottom: calc-em(5,14);
+}
