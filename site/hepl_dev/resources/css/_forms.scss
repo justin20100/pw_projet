@@ -133,3 +133,45 @@ input{
 .LoginForm__link{
     font-size: calc-em(14,16);
 }
+
+/* ----- register form ----- */
+.registerForm__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.registerForm__element{
+    width: 50%;
+    margin-bottom: calc-em(30,16);
+}
+.registerForm__label{
+    display: inline-block;
+    padding-bottom: calc-em(10,16);
+}
+.registerForm__input{
+    padding: calc-em(15,16);
+    border-radius: calc-em(10,16);
+    border: none;
+    box-shadow: 3px 2px 5px 3px rgba(0, 0, 0, 0.16);
+    width: 100%;
+    &:focus{
+        outline-color: $blue;
+    }
+}
+.registerForm__button{
+    border: none;
+    margin-bottom: calc-em(10,16);
+}
+.registerForm__link{
+    font-size: calc-em(14,16);
+}
+
+/* ----- logout form ----- */
+.logout__form{
+    margin-left: calc-em(50,16);
+}
+.logout__button{
+    width: calc-em(35,14);
+    border: none;
+    background-color: transparent;
+}

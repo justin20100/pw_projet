@@ -82,11 +82,9 @@
 .navigation__subitem>.navigation__link{
     margin: 0;
 }
-.navigation__profileSvg{
+.logout__svg{
     fill: $black;
     &:hover{
-        fill: $blue;
-    }
+        fill: $blue;}
 }
-
 

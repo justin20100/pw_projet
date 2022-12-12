@@ -40,7 +40,7 @@
                         <input name="password" type="password" id="password" class=" @error('password') @enderror loginForm__input" value="{{old('password')}}" placeholder="votre mot de passe">
                     </div>
                     <button type="submit" class="LoginForm__button button">Login</button>
-                    <p class="LoginForm__link"><a href="/">I forgot my password</a></p>
+                    <p class="LoginForm__link"><a href="/register">M'enregistrer</a></p>
                 </form>
             </div>
     </section>

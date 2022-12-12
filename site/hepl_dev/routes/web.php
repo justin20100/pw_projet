@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthenticatedSessionController;
+use App\Http\Controllers\RegistrationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -38,3 +39,7 @@ Route::get('/contact', function () {return view('contact');});
 Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('login')->middleware('guest');
 Route::post('/login', [AuthenticatedSessionController::class, 'store'])->middleware('guest');
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->middleware('auth');
+
+// Register
+Route::get('/register',[RegistrationController::class, 'create'])->name('register')->middleware('guest');
+Route::post('/register',[RegistrationController::class,'store'])->middleware('guest');

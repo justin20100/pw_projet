@@ -80,32 +80,31 @@
         <li class="navigation__item"><a class="navigation__link" href="/news">News</a></li>
         <li class="navigation__item"><a class="navigation__link" href="/forum">Forum</a></li>
         <li class="navigation__item"><a class="navigation__link" href="/contact">Contact</a></li>
-        @auth
-            <li class="navigation__item"><a class="navigation__link" href="/profile">
-                    <svg class="navigation__profileSvg" width="25" height="25" viewBox="0 0 512.000000 512.000000"
-                         preserveAspectRatio="xMidYMid meet">
-                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                           stroke="none">
-                            <path d="M2415 4689 c-111 -15 -211 -46 -330 -104 -284 -139 -478 -378 -567
--703 -18 -65 -22 -105 -22 -252 0 -158 3 -184 27 -275 107 -397 419 -692 822
--778 l70 -15 -119 -1 c-627 -4 -1242 -355 -1583 -902 -179 -287 -282 -631
--286 -954 -2 -125 -1 -132 26 -177 18 -31 44 -57 75 -75 l47 -28 1985 0 c1829
-0 1987 1 2015 17 39 21 82 64 103 103 22 39 21 248 -2 390 -66 402 -237 748
--515 1038 -354 369 -844 584 -1337 588 l-119 1 65 14 c409 87 719 380 827 779
-24 91 27 117 27 275 0 189 -11 247 -70 397 -177 450 -649 724 -1139 662z"/>
-                        </g>
-                    </svg>
-                </a></li>
-        @endauth
         {{--        <li class="navigation__item"><input class="navigation__search" type="text" placeholder="Ma recherche"></li>--}}
         @guest
             <li class="navigation__item"><a class="navigation__fill-button" href="/register">S'inscrire</a></li>
             <li class="navigation__item"><a class="navigation__light-button" href="/login">Se connecter</a></li>
         @endguest
         @auth
+            <li class="navigation__item"><a class="navigation__link" href="/profile/{{auth()->user()->slug}}">{{auth()->user()->firstname.' '.auth()->user()->lastname}}</a></li>
             <form action="/logout" method="post" class="logout__form">
                 @csrf
-                <button type="submit" class="navigation__fill-button">Se deconnecter</button>
+                <button type="submit" class="logout__button">
+                    <svg class="logout__svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 471.2 471.2" style="enable-background:new 0 0 471.2 471.2;" xml:space="preserve">
+<g>
+    <g>
+        <path d="M227.619,444.2h-122.9c-33.4,0-60.5-27.2-60.5-60.5V87.5c0-33.4,27.2-60.5,60.5-60.5h124.9c7.5,0,13.5-6,13.5-13.5
+			s-6-13.5-13.5-13.5h-124.9c-48.3,0-87.5,39.3-87.5,87.5v296.2c0,48.3,39.3,87.5,87.5,87.5h122.9c7.5,0,13.5-6,13.5-13.5
+			S235.019,444.2,227.619,444.2z"/>
+        <path d="M450.019,226.1l-85.8-85.8c-5.3-5.3-13.8-5.3-19.1,0c-5.3,5.3-5.3,13.8,0,19.1l62.8,62.8h-273.9c-7.5,0-13.5,6-13.5,13.5
+			s6,13.5,13.5,13.5h273.9l-62.8,62.8c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4l85.8-85.8
+			C455.319,239.9,455.319,231.3,450.019,226.1z"/>
+    </g>
+</g>
+</svg>
+                </button>
             </form>
         @endauth
     </ul>
