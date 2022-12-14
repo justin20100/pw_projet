@@ -65,28 +65,32 @@
         </g>
     </svg>
     <ul class="navigation__list">
-        <li class="navigation__item"><a class="navigation__link" href="/">Accueil</a></li>
-        <li class="navigation__item navigation__section-item"><a class="navigation__link" href="/section">La section</a>
+        <li class="navigation__item"><a class="navigation__link" href="/{{app()->getLocale()}}/">{{__('navigation.home')}}</a></li>
+        <li class="navigation__item navigation__section-item"><a class="navigation__link" href="/{{app()->getLocale()}}/section">{{__('navigation.the_section')}}</a>
             <ul class="navigation__sublist">
-                <li class="navigation__subitem"><a class="navigation__link" href="/section/valeurs">Nos valeurs</a></li>
-                <li class="navigation__subitem"><a class="navigation__link" href="/section/enseignants">Enseignants</a>
+                <li class="navigation__subitem"><a class="navigation__link" href="/{{app()->getLocale()}}/section/valeurs">{{__('navigation.our_values')}}</a></li>
+                <li class="navigation__subitem"><a class="navigation__link" href="/{{app()->getLocale()}}/section/enseignants">{{__('navigation.teachers')}}</a>
                 </li>
-                <li class="navigation__subitem"><a class="navigation__link" href="/section/alumnis">Alumnis</a></li>
-                <li class="navigation__subitem"><a class="navigation__link" href="/section/projets">Projets
-                        étudiants</a></li>
+                <li class="navigation__subitem"><a class="navigation__link" href="/{{app()->getLocale()}}/section/alumnis">{{__('navigation.alumnis')}}</a></li>
+                <li class="navigation__subitem"><a class="navigation__link" href="/{{app()->getLocale()}}/section/projets">{{__('navigation.student_projects')}}</a></li>
             </ul>
         </li>
-        <li class="navigation__item"><a class="navigation__link" href="/emploie">Emploie</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="/news">News</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="/forum">Forum</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="/contact">Contact</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="/{{app()->getLocale()}}/emploie">{{__('navigation.job')}}</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="/{{app()->getLocale()}}/news">{{__('navigation.news')}}</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="/{{app()->getLocale()}}/forum">{{__('navigation.forum')}}</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="/{{app()->getLocale()}}/contact">{{__('navigation.contact')}}</a></li>
         {{--        <li class="navigation__item"><input class="navigation__search" type="text" placeholder="Ma recherche"></li>--}}
         @guest
-            <li class="navigation__item"><a class="navigation__fill-button" href="/register">S'inscrire</a></li>
-            <li class="navigation__item"><a class="navigation__light-button" href="/login">Se connecter</a></li>
+            <li class="navigation__item"><a class="navigation__fill-button" href="/register">{{__('navigation.register')}}</a></li>
+            <li class="navigation__item"><a class="navigation__light-button" href="/login">{{__('navigation.login')}}</a></li>
         @endguest
         @auth
-            <li class="navigation__item"><a class="navigation__link" href="/profile/{{auth()->user()->slug}}">{{auth()->user()->firstname.' '.auth()->user()->lastname}}</a></li>
+            <li class="navigation__item">
+                <a class="navigation__avatar-link" href="/profile/{{auth()->user()->slug}}">
+                    <img class="navigation__avatar" src="/images/avatars/{{auth()->user()->avatar}}" alt="profile avatar of {{auth()->user()->firstname.' '.auth()->user()->lastname}}">
+                    <p class="navigation__avatar-name">{{auth()->user()->firstname.' '.auth()->user()->lastname}}</p>
+                </a>
+            </li>
             <form action="/logout" method="post" class="logout__form">
                 @csrf
                 <button type="submit" class="logout__button">

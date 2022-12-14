@@ -17,6 +17,7 @@
     <x-commons.navigation></x-commons.navigation>
     <p class="header__arian-thread">/<strong>Se connecter</strong></p>
     <h1 class="header__title">Se connecter</h1>
+    <p class="header__excerpt">Nous sommes content de vous revoir! De nouvelles questions vous attendent surement.</p>
 </header>
 <main class="main">
     <section class="main__loginForm loginForm">
@@ -40,7 +41,8 @@
                         <input name="password" type="password" id="password" class=" @error('password') @enderror loginForm__input" value="{{old('password')}}" placeholder="votre mot de passe">
                     </div>
                     <button type="submit" class="LoginForm__button button">Login</button>
-                    <p class="LoginForm__link"><a href="/register">M'enregistrer</a></p>
+                    <p class="LoginForm__link"><a href="/register">Mot de passe oublié</a></p>
+                    <p class="LoginForm__link"><a href="/register">Je n'ai pas de compte</a></p>
                 </form>
             </div>
     </section>

@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
@@ -22,6 +23,7 @@ class User extends Authenticatable
     protected $fillable = [
         'firstname',
         'lastname',
+        'avatar',
         'email',
         'password',
     ];
@@ -45,11 +47,13 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public static function create(mixed $request)
+    public static function create(mixed $request, $avatar)
     {
         $user = new User();
         $user->firstname = $request['firstname'];
         $user->lastname = $request['lastname'];
+        $user->avatar = $avatar;
+        $user->slug = Str::slug($request['firstname'].' '.$request['lastname']);
         $user->password = Hash::make($request['password']);
         $user->email = $request['email'];
         $user->save();

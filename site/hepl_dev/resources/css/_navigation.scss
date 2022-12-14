@@ -87,4 +87,18 @@
     &:hover{
         fill: $blue;}
 }
-
+.navigation__avatar{
+    display: inline-block;
+    max-width: 30px;
+    border-radius: 100%;
+}
+.navigation__avatar-link{
+    display: flex;
+    align-items: center;
+    gap: calc-em(10,16);
+    margin-left: calc-em(50,16);
+    color: $black;
+    &:hover{
+        color: $blue;
+    }
+}

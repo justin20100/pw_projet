@@ -18,12 +18,9 @@
     <x-commons.navigation></x-commons.navigation>
     <div class="header__cta cta">
         <div class="cta__left">
-            <p class="cta__title">Apprendre la <strong>qualité web</strong> c’est s’<strong>assurer</strong> un <strong>emploie</strong>
-                en sortie de cycle.</p>
-            <p class="cta__description">Les bons développeurs sont en pénuries. C’est pourquoi la qualité web est un
-                objectif important aux yeux de nos enseignants. Notre réseau d’entreprises est très friand de la qualité
-                de nos étudiants.</p>
-            <a href="/section" class="cta__link button">Découvrir notre section</a>
+            <p class="cta__title">{{__('index.cta__title')}}</p>
+            <p class="cta__description">{{__('index.cta__description')}}</p>
+            <a href="/section" class="cta__link button">{{__('index.cta__link')}}</a>
         </div>
         <div class="cta__right">
             <div class="cta__person-card person-card">
@@ -71,7 +68,7 @@
 </header>
 <main class="main">
     <section class="main__cta-news cta-news">
-        <h2 class="cta-news__title">Les dernières actualités</h2>
+        <h2 class="cta-news__title">{{__('index.cta-news__title')}}</h2>
         <div class="cta-news__cards">
             <div class="cta-news__card news-card">
                 <a class="cta-news__link" href="#">
@@ -110,19 +107,17 @@
                 </a>
             </div>
         </div>
-        <a href="/news" class="cta-news__link button">Voir toutes les actualités</a>
+        <a href="/news" class="cta-news__link button">{{__('index.cta-news__link')}}</a>
     </section>
     <section class="main__cta-projects projects">
-        <h2 class="projects__title">Des projets D’étudiants</h2>
+        <h2 class="projects__title">{{__('index.projects__title')}}</h2>
         <x-commons.projectsCards></x-commons.projectsCards>
-        <a href="/section/projets" class="projects__link button">Découvrir les projets</a>
+        <a href="/section/projets" class="projects__link button">{{__('index.projects__link')}}</a>
     </section>
     <section class="main__cta-blog cta-blog">
-        <h2 class="cta-blog__title">Une question ? Une remarque ?</h2>
-        <p class="cta-blog__excerpt">Si vous découvrez cette option web de la HEPL avec ce site, vous avez certainement
-            des questions. Nous vous invitons donc à faire un tour sur notre forum. Si votre question n’a pas encore été
-            posée c’est l’occasion pour vous de vous inscrire et de poser celle si.</p>
-        <a href="/blog" class="cta-blog__link button">Poser une question</a>
+        <h2 class="cta-blog__title">{{__('index.cta-blog__title')}}</h2>
+        <p class="cta-blog__excerpt">{{__('index.cta-blog__excerpt')}}</p>
+        <a href="/blog" class="cta-blog__link button">{{__('index.cta-blog__link')}}</a>
     </section>
 </main>
 <x-commons.footer></x-commons.footer>

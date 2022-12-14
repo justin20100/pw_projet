@@ -2,8 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4ca5447-e683-472a-960b-0df13977f8cd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/site/hepl_dev/app/Http/Uploads/HandlesImageUploads.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/hepl_dev/lang/en/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/hepl_dev/lang/en/navigation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/hepl_dev/lang/en/section.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/hepl_dev/lang/fr/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/hepl_dev/lang/fr/navigation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site/hepl_dev/lang/fr/section.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site/hepl_dev/resources/css/_forum.scss" beforeDir="false" afterPath="$PROJECT_DIR$/site/hepl_dev/resources/css/_forum.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design.xd" beforeDir="false" afterPath="$PROJECT_DIR$/design.xd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/hepl_dev/app/Http/Controllers/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/hepl_dev/app/Http/Controllers/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/hepl_dev/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/hepl_dev/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/hepl_dev/app/Http/Requests/RegisterFormRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/hepl_dev/app/Http/Requests/RegisterFormRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/hepl_dev/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/hepl_dev/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/hepl_dev/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/site/hepl_dev/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/hepl_dev/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/site/hepl_dev/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/hepl_dev/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/hepl_dev/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/hepl_dev/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/hepl_dev/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/hepl_dev/resources/css/_forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/site/hepl_dev/resources/css/_forms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/hepl_dev/resources/css/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/site/hepl_dev/resources/css/_navigation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/hepl_dev/resources/views/Components/Commons/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/hepl_dev/resources/views/Components/Commons/navigation.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/hepl_dev/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/hepl_dev/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/hepl_dev/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/hepl_dev/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/hepl_dev/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/hepl_dev/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/hepl_dev/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/site/hepl_dev/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +86,7 @@
       <workItem from="1664353322305" duration="912000" />
       <workItem from="1664377977328" duration="143000" />
       <workItem from="1670067869646" duration="201000" />
+      <workItem from="1671029975852" duration="5586000" />
     </task>
     <servers />
   </component>
