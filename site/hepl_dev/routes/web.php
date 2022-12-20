@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('{locale?}/', function () {
+    return view('index');
 });
 
 Route::get('/dashboard', function () {
@@ -27,5 +27,27 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+
+
+Route::get('{locale?}/contact', function () {
+    return view('contact');
+})->name('contact');
+
+Route::get('{locale?}/emploie', function () {
+    return view('contact');
+})->name('emploie');
+
+Route::get('{locale?}/forum', function () {
+    return view('forum');
+})->name('forum');
+
+Route::get('{locale?}/news', function () {
+    return view('news');
+})->name('news');
+
+Route::get('{locale?}/section', function () {
+    return view('section');
+})->name('section');
 
 require __DIR__.'/auth.php';
