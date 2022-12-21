@@ -111,7 +111,7 @@
     </section>
     <section class="main__cta-projects projects">
         <h2 class="projects__title">{{__('index.projects__title')}}</h2>
-        <x-commons.projectsCards></x-commons.projectsCards>
+        <x-commons.projectsCards :projects="$projects"></x-commons.projectsCards>
         <a href="/section/projets" class="projects__link button">{{__('index.projects__link')}}</a>
     </section>
     <section class="main__cta-blog cta-blog">

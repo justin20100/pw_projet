@@ -47,15 +47,15 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public static function create(mixed $request, $avatar)
+    public static function create(mixed $data)
     {
         $user = new User();
-        $user->firstname = $request['firstname'];
-        $user->lastname = $request['lastname'];
-        $user->avatar = $avatar;
-        $user->slug = Str::slug($request['firstname'].' '.$request['lastname']);
-        $user->password = Hash::make($request['password']);
-        $user->email = $request['email'];
+        $user->firstname = $data['firstname'];
+        $user->lastname = $data['lastname'];
+        $user->avatar = $data['avatar'];
+        $user->slug = Str::slug($data['firstname'].' '.$data['lastname']);
+        $user->password = Hash::make($data['password']);
+        $user->email = $data['email'];
         $user->save();
         return $user;
     }

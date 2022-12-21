@@ -10,9 +10,12 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
+use App\Http\Uploads\HandlesImageUploads;
 
 class RegisteredUserController extends Controller
 {
+    use HandlesImageUploads;
+
     /**
      * Display the registration view.
      *
@@ -34,15 +37,20 @@ class RegisteredUserController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => ['required', 'string', 'max:255'],
+            'firstname' => ['required', 'string', 'max:255'],
+            'lastname' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:'.User::class],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
+        $avatar = $this->resizeAndSave($request->file('avatar'));
+
         $user = User::create([
-            'name' => $request->name,
+            'firstname' => $request->firstname,
+            'lastname' => $request->lastname,
             'email' => $request->email,
             'password' => Hash::make($request->password),
+            'avatar'=> $avatar
         ]);
 
         event(new Registered($user));

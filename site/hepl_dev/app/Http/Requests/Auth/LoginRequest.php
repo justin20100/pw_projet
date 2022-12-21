@@ -29,8 +29,8 @@ class LoginRequest extends FormRequest
     public function rules()
     {
         return [
-            'email' => ['required', 'string', 'email'],
-            'password' => ['required', 'string'],
+            'email' => 'email|exists:users,email',
+            'password' => 'min:8|max:64'
         ];
     }
 
@@ -43,15 +43,13 @@ class LoginRequest extends FormRequest
      */
     public function authenticate()
     {
-        $this->ensureIsNotRateLimited();
-
         if (! Auth::attempt($this->only('email', 'password'), $this->boolean('remember'))) {
             RateLimiter::hit($this->throttleKey());
-
             throw ValidationException::withMessages([
                 'email' => trans('auth.failed'),
             ]);
         }
+        var_dump('coucou');
 
         RateLimiter::clear($this->throttleKey());
     }
@@ -88,6 +86,6 @@ class LoginRequest extends FormRequest
      */
     public function throttleKey()
     {
-        return Str::transliterate(Str::lower($this->input('email')).'|'.$this->ip());
+        Str::transliterate(Str::lower($this->input('email')).'|'.$this->ip());
     }
 }

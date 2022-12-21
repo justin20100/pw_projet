@@ -26,12 +26,11 @@ class AuthenticatedSessionController extends Controller
      * @param  \App\Http\Requests\Auth\LoginRequest  $request
      * @return \Illuminate\Http\RedirectResponse
      */
+
     public function store(LoginRequest $request)
     {
         $request->authenticate();
-
         $request->session()->regenerate();
-
         return redirect()->intended(RouteServiceProvider::HOME);
     }
 
@@ -41,6 +40,7 @@ class AuthenticatedSessionController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\RedirectResponse
      */
+
     public function destroy(Request $request)
     {
         Auth::guard('web')->logout();

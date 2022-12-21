@@ -108,9 +108,14 @@ input{
     flex-direction: column;
     align-items: center;
 }
-.loginForm__email, .loginForm__password{
+.loginForm__email, .loginForm__password, .loginForm__remember-forget{
     width: 50%;
     margin-bottom: calc-em(30,16);
+}
+.loginForm__remember-forget{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .loginForm__label{
     display: inline-block;
@@ -126,11 +131,11 @@ input{
         outline-color: $blue;
     }
 }
-.LoginForm__button{
+.loginForm__button{
     border: none;
     margin-bottom: calc-em(10,16);
 }
-.LoginForm__link{
+.loginForm__link{
     font-size: calc-em(14,16);
 }
 
