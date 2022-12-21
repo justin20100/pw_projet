@@ -81,12 +81,12 @@
         <li class="navigation__item"><a class="navigation__link" href="/{{app()->getLocale()}}/contact">{{__('navigation.contact')}}</a></li>
         {{--        <li class="navigation__item"><input class="navigation__search" type="text" placeholder="Ma recherche"></li>--}}
         @guest
-            <li class="navigation__item"><a class="navigation__fill-button" href="/register">{{__('navigation.register')}}</a></li>
-            <li class="navigation__item"><a class="navigation__light-button" href="/login">{{__('navigation.login')}}</a></li>
+            <li class="navigation__item"><a class="navigation__fill-button" href="/{{app()->getLocale()}}/register">{{__('navigation.register')}}</a></li>
+            <li class="navigation__item"><a class="navigation__light-button" href="/{{app()->getLocale()}}/login">{{__('navigation.login')}}</a></li>
         @endguest
         @auth
             <li class="navigation__item">
-                <a class="navigation__avatar-link" href="/profile/{{auth()->user()->slug}}">
+                <a class="navigation__avatar-link" href="/{{app()->getLocale()}}/dashboard">
                     <img class="navigation__avatar" src="/images/avatars/{{auth()->user()->avatar}}" alt="profile avatar of {{auth()->user()->firstname.' '.auth()->user()->lastname}}">
                     <p class="navigation__avatar-name">{{auth()->user()->firstname.' '.auth()->user()->lastname}}</p>
                 </a>
