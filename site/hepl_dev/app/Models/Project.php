@@ -57,7 +57,8 @@ class Project extends Model
         return $project;
     }
 
-    public static function store(){
-
+    public function tags()
+    {
+        return $this->belongsToMany(Tag::class)->as('tags');
     }
 }

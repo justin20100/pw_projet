@@ -4,8 +4,9 @@
         <img class="projects-card__img" src="{{url('/images/index/portfolio.jpg')}}" alt="">
         <p class="projects-card__title">{{$project['title']}}</p>
         <ul class="projects-card__tag-list">
-            <li class="projects-card__tag-item"><a href=""></a></li>
-            <li class="projects-card__tag-item"><a href="">TFE</a></li>
+            @foreach($project['tags'] as $tag)
+            <li class="projects-card__tag-item"><a href="">{{$tag['name']}}</a></li>
+            @endforeach
         </ul>
         <ul class="projects-card__auth-list">
             <li class="projects-card__auth-item">

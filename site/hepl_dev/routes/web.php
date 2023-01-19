@@ -3,23 +3,14 @@
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\AuthenticatedSessionController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ProjectController;
 use App\Models\Project;
 use Illuminate\Support\Facades\Route;
 
 
 // Home
-Route::get('{locale?}/', function ()
-{
-    $projects =  Project::join('users', 'projects.user_id', '=', 'users.id')
-        ->with
-        ->join('project_tag','project_tag.project_id','=','projects.id')
-        ->join('tags', 'project_tag.tag_id', '=', 'tags.id')
-        ->inRandomOrder()
-        ->limit(5)
-        ->get();
-    dd($projects);
-    return view('index', compact('projects'));
-});
+
+Route::get('{locale?}/', [ProjectController::class, 'index'])->name('index');
 
 // Profile
 Route::middleware('auth')->group(function () {
