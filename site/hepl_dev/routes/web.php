@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\AuthenticatedSessionController;
+use App\Http\Controllers\HomepageController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProjectController;
 use App\Models\Project;
@@ -10,7 +11,7 @@ use Illuminate\Support\Facades\Route;
 
 // Home
 
-Route::get('{locale?}/', [ProjectController::class, 'index'])->name('index');
+Route::get('{locale?}/', [HomepageController::class, 'index'])->name('index');
 
 // Profile
 Route::middleware('auth')->group(function () {
@@ -65,9 +66,11 @@ Route::get('{locale?}/section/enseignants', function () {
     return view('section.enseignants');
 })->name('section.enseignants');
 
-Route::get('{locale?}/section/projets', function () {
-    return view('section.projets');
-})->name('section.projets');
+Route::get('{locale?}/section/singleenseignant', function () {
+    return view('section.singleenseignant');
+})->name('section.singleenseignant');
+
+Route::get('{locale?}/section/projets', [ProjectController::class, 'index'])->name('index')->name('section.projets');
 
 Route::get('{locale?}/section/valeurs', function () {
     return view('section.valeurs');
@@ -75,3 +78,10 @@ Route::get('{locale?}/section/valeurs', function () {
 
 
 require __DIR__.'/auth.php';
+
+/* ----- languages ----- */
+Route::get('language/{locale}', function ($locale) {
+    app()->setLocale($locale);
+    session()->put('locale', $locale);
+    return redirect()->back();
+});

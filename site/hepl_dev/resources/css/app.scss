@@ -9,11 +9,14 @@
 @import "navigation";
 @import "footer";
 @import "projectsCards";
+@import "pagination";
 
 /* ----- pages ------ */
 @import "index";
 @import "section";
 @import "enseignants";
+@import "news";
+@import "alumnis";
 @import "projets";
 @import "forum";
 @import "login";
@@ -43,7 +46,7 @@ footer {
     align-items: center;
 }
 header, main {
-    max-width: 1730px;
+    max-width: 1500px;
     margin: 0 auto;
     width: 100%;
 }

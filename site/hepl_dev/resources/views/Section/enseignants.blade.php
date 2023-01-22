@@ -54,11 +54,6 @@
             <p class="enseignants__short-desc">Enseigne une introduction au design web, php, laravel,… </p>
         </div>
     </section>
-    <section class="main__cta-projects projects">
-        <h2 class="projects__title">Des projets d'etudiants</h2>
-        <x-commons.projectsCards></x-commons.projectsCards>
-        <a href="/section/projets" class="projects__link button">Découvrir les projets</a>
-    </section>
 </main>
 </body>
 <x-commons.footer></x-commons.footer>

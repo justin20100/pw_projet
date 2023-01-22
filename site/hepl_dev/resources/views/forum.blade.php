@@ -30,8 +30,8 @@
                     <li class="subject__tag">CSS</li>
                     <li class="subject__tag">mobile</li>
                 </ul>
-                <h3 class="subject__title">Je cherche a adapter mon site pour les smartphone. Quelle est la meilleur des facons?</h3>
-                <p class="subject__excerpt">La courte description du sujet qui donne une ideee a l'utilisateur de ce qu'est le sujet</p>
+                <h3 class="subject__title">Je cherche a adapter mon site pour les smartphones. Quelle est la meilleur des facons?</h3>
+                <p class="subject__excerpt">La courte description du sujet qui donne une idée a l'utilisateur de ce qu'est le sujet</p>
                 <div class="subject__auth">
                     <img src="{{url('/images/index/avis4.jpeg')}}" alt="" class="subject__auth-img">
                     <p class="subject__auth-name">Par <a href="#">Anthony Debone</a> le <time class="subject__date" datetime="2022-05-22">20 mai 2022</time></p>
@@ -42,7 +42,7 @@
                     <li class="subject__tag">CSS</li>
                 </ul>
                 <h3 class="subject__title">Comment centrer une div ?</h3>
-                <p class="subject__excerpt">Il existe plusieur facons de centrer une div. Certaines méthodes sont très vieilles mais fonctionnent encore très bien. d'autres sont plus simple à mettre en place et plus efficace.</p>
+                <p class="subject__excerpt">Il existe plusieur facons de centrer une div. Certaines méthodes sont très vieilles mais fonctionnent encore très bien. D'autres sont plus simple à mettre en place et plus efficace.</p>
                 <div class="subject__auth">
                     <img src="{{url('/images/index/avis4.jpeg')}}" alt="" class="subject__auth-img">
                     <p class="subject__auth-name">Par <a href="#">Anthony Debone</a> le <time class="subject__date" datetime="2022-05-22">20 mai 2022</time></p>
@@ -56,7 +56,7 @@
                     <li class="subject__tag">JS</li>
                 </ul>
                 <h3 class="subject__title">Comment centrer une div ?</h3>
-                <p class="subject__excerpt">Il existe plusieur facons de centrer une div. Certaines méthodes sont très vieilles mais fonctionnent encore très bien. d'autres sont plus simple à mettre en place et plus efficace.</p>
+                <p class="subject__excerpt">Il existe plusieur facons de centrer une div. Certaines méthodes sont très vieilles mais fonctionnent encore très bien. D'autres sont plus simple à mettre en place et plus efficace.</p>
                 <div class="subject__auth">
                     <img src="{{url('/images/index/avis4.jpeg')}}" alt="" class="subject__auth-img">
                     <p class="subject__auth-name">Par <a href="#">Anthony Debone</a> le <time class="subject__date" datetime="2022-05-22">20 mai 2022</time></p>
@@ -69,7 +69,7 @@
                     <li class="subject__tag">CSS</li>
                 </ul>
                 <h3 class="subject__title">Comment centrer une div ?</h3>
-                <p class="subject__excerpt">Il existe plusieur facons de centrer une div. Certaines méthodes sont très vieilles mais fonctionnent encore très bien. d'autres sont plus simple à mettre en place et plus efficace.</p>
+                <p class="subject__excerpt">Il existe plusieur facons de centrer une div. Certaines méthodes sont très vieilles mais fonctionnent encore très bien. D'autres sont plus simple à mettre en place et plus efficace.</p>
                 <div class="subject__auth">
                     <img src="{{url('/images/index/avis4.jpeg')}}" alt="" class="subject__auth-img">
                     <p class="subject__auth-name">Par <a href="#">Anthony Debone</a> le <time class="subject__date" datetime="2022-05-22">20 mai 2022</time></p>
@@ -82,7 +82,7 @@
                     <li class="subject__tag">CSS</li>
                 </ul>
                 <h3 class="subject__title">Comment centrer une div ?</h3>
-                <p class="subject__excerpt">Il existe plusieur facons de centrer une div. Certaines méthodes sont très vieilles mais fonctionnent encore très bien. d'autres sont plus simple à mettre en place et plus efficace.</p>
+                <p class="subject__excerpt">Il existe plusieur facons de centrer une div. Certaines méthodes sont très vieilles mais fonctionnent encore très bien. D'autres sont plus simple à mettre en place et plus efficace.</p>
                 <div class="subject__auth">
                     <img src="{{url('/images/index/avis4.jpeg')}}" alt="" class="subject__auth-img">
                     <p class="subject__auth-name">Par <a href="#">Anthony Debone</a> le <time class="subject__date" datetime="2022-05-22">20 mai 2022</time></p>
@@ -95,7 +95,7 @@
                     <li class="subject__tag">CSS</li>
                 </ul>
                 <h3 class="subject__title">Comment centrer une div ?</h3>
-                <p class="subject__excerpt">Il existe plusieur facons de centrer une div. Certaines méthodes sont très vieilles mais fonctionnent encore très bien. d'autres sont plus simple à mettre en place et plus efficace.</p>
+                <p class="subject__excerpt">Il existe plusieur facons de centrer une div. Certaines méthodes sont très vieilles mais fonctionnent encore très bien. D'autres sont plus simple à mettre en place et plus efficace.</p>
                 <div class="subject__auth">
                     <img src="{{url('/images/index/avis4.jpeg')}}" alt="" class="subject__auth-img">
                     <p class="subject__auth-name">Par <a href="#">Anthony Debone</a> le <time class="subject__date" datetime="2022-05-22">20 mai 2022</time></p>

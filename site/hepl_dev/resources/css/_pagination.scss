@@ -1,0 +1,28 @@
+.pagination{
+    width: 150px;
+    font-family: latoRegular,sans-serif;
+}
+.pagination__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.pagination__list .active{
+    color: $blue;
+    font-weight: bold;
+}
+.pagination__item{
+    color: $black;
+    :visited{
+        color: $black;
+    }
+}
+.pagination__arrow{
+    color: $black;
+    font-size: 40px;
+}
+.pagination__arrow-active{
+    color: $blue;
+    font-size: 40px;
+}

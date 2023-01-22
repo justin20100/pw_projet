@@ -1,0 +1,40 @@
+.alumnis{
+    padding: 0 calc-em(100,16);
+}
+.alumnis__year-title{
+    font-size: calc-em(30,16);
+    margin-bottom: calc-em(50,30);
+}
+.alumnis__header{
+    margin-bottom: calc-em(100,16);
+}
+.alumnis__cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: calc-em(100,16);
+    margin-bottom: calc-em(100,16);
+}
+.alumnis__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:hover{
+        color: $blue;
+        .alumnis__img{
+            animation: hoverShadow 0.3s ease-in-out forwards;
+        }
+    }
+}
+.alumnis__img{
+    border-radius: 100%;
+    max-width: 100%;
+    margin-bottom: calc-em(20,16);
+    &:hover{
+        animation: hoverShadow 0.3s ease-in-out forwards;
+    }
+}
+.alumnis__name{
+    font-size: calc-em(22,16);
+    font-family: expletussansRegular,sans-serif;
+    margin-bottom: calc-em(10,22);
+}

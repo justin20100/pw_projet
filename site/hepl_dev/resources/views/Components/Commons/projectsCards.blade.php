@@ -11,7 +11,7 @@
         <ul class="projects-card__auth-list">
             <li class="projects-card__auth-item">
                 <a href="#"><img src="{{url('/images/index/avis1.jpeg')}}" alt="" class="projects-card__auth-img"></a>
-                <a href="#"><p class="projects-card__auth-name">{{$project['lastname'].' '.$project['firstname']}}</p></a>
+                <a href="/student/{{$project['users']['slug']}}"><p class="projects-card__auth-name">{{$project['users']['firstname'].' '.$project['users']['lastname']}}</p></a>
             </li>
         </ul>
     </div>

@@ -61,4 +61,9 @@ class Project extends Model
     {
         return $this->belongsToMany(Tag::class)->as('tags');
     }
+
+    public function users()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
 }

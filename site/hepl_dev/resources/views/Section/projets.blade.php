@@ -19,8 +19,8 @@
     <section class="main__cta-projects projects">
         <h2 class="projects__title hidden">Des projets D’étudiants</h2>
         <x-commons.filterForm></x-commons.filterForm>
-        <x-commons.projectsCards></x-commons.projectsCards>
-        <a href="/section/projets" class="projects__link button">Découvrir plus</a>
+        <x-commons.projectsCards :projects="$projects"></x-commons.projectsCards>
+        {{ $projects->links('vendor.pagination.default') }}
     </section>
 </main>
 <x-commons.footer></x-commons.footer>

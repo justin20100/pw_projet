@@ -14,8 +14,8 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        $projects = Project::with(['tags'])->limit(6)->get();
-        return view('index', compact('projects'));
+        $projects = Project::with('users')->with('tags')->paginate(9);
+        return view('section.projets', compact('projects'));
     }
 
     /**

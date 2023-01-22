@@ -26,32 +26,29 @@
             <div class="cta__person-card person-card">
                 <img src="{{url('/images/index/avis1.jpeg')}}" alt="" class="person-card__img">
                 <p class="person-card__name">Louis Delaroche</p>
-                <p class="person-card__comment">«&nbsp;Deux mois de stage Chez Whitecube a suffit pour qu’ils me
+                <p class="person-card__comment">«&nbsp;Deux mois de stage a suffit pour qu’ils me
                     proposent une place au sain de leur équipe de designer.&nbsp;»</p>
             </div>
             <div class="cta__person-card person-card">
                 <img src="{{url('/images/index/avis2.jpeg')}}" alt="" class="person-card__img">
                 <p class="person-card__name">Maxime Lareu</p>
-                <p class="person-card__comment">«&nbsp;Après la fin de mon stage en 3e année l’agence dans laquelle je
-                    l’ai fait m’a envoyé une offre d’emploi que j’ai accepté.&nbsp;»</p>
+                <p class="person-card__comment">«&nbsp;Tout juste diplomée et déja engagée en tant que designer ui ux&nbsp;»</p>
             </div>
             <div class="cta__person-card person-card">
                 <img src="{{url('/images/index/avis3.jpeg')}}" alt="" class="person-card__img">
                 <p class="person-card__name">Isabelle Dubois</p>
-                <p class="person-card__comment">«&nbsp;Deux mois de stage Chez Whitecube a suffit pour qu’ils me
+                <p class="person-card__comment">«&nbsp;Deux mois de stage a suffit pour qu’ils me
                     proposent une place au sain de leur équipe de designer.&nbsp;»</p>
             </div>
             <div class="cta__person-card person-card">
                 <img src="{{url('/images/index/avis4.jpeg')}}" alt="" class="person-card__img">
                 <p class="person-card__name">Theo Fondant</p>
-                <p class="person-card__comment">«&nbsp;Deux mois de stage Chez Whitecube a suffit pour qu’ils me
-                    proposent une place au sain de leur équipe de designer.&nbsp;»</p>
+                <p class="person-card__comment">«&nbsp;Tout juste diplomée et déja engagée en tant que designer ui ux&nbsp;»</p>
             </div>
             <div class="cta__person-card person-card">
                 <img src="{{url('/images/index/avis5.jpeg')}}" alt="" class="person-card__img">
                 <p class="person-card__name">Charle Sacré</p>
-                <p class="person-card__comment">«&nbsp;Deux mois de stage Chez Whitecube a suffit pour qu’ils me
-                    proposent une place au sain de leur équipe de designer.&nbsp;»</p>
+                <p class="person-card__comment">«&nbsp;Tout juste diplomée et déja engagée en tant que designer ui ux&nbsp;»</p>
             </div>
             <div class="cta__person-card person-card">
                 <img src="{{url('/images/index/avis7.jpeg')}}" alt="" class="person-card__img">
@@ -112,7 +109,7 @@
     <section class="main__cta-projects projects">
         <h2 class="projects__title">{{__('index.projects__title')}}</h2>
         <x-commons.projectsCards :projects="$projects"></x-commons.projectsCards>
-        <a href="/section/projets" class="projects__link button">{{__('index.projects__link')}}</a>
+        <a href="/{{app()->getLocale()}}/section/projets" class="projects__link button">{{__('index.projects__link')}}</a>
     </section>
     <section class="main__cta-blog cta-blog">
         <h2 class="cta-blog__title">{{__('index.cta-blog__title')}}</h2>
